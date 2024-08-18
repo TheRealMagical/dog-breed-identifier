@@ -1,0 +1,102 @@
+
+Argument 1: uploaded_images/
+Argument 2: resnet
+Argument 3: dognames.txt
+
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:            Cheeseburger_01.jpg  label:               cheeseburger
+ 3 key:                  Racoon_01.jpg  label:                     racoon
+ 4 key:                     Dog_02.jpg  label:                        dog
+
+1 Dog_01.jpg
+2 Cheeseburger_01.jpg
+3 Racoon_01.jpg
+4 Dog_02.jpg
+
+     MATCH:
+
+           Cheeseburger_01.jpg: 
+Real:               cheeseburger   Classifier:                   cheeseburger
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+                 Racoon_01.jpg: 
+Real:                     racoon   Classifier: lesser panda, red panda, panda, bear cat, cat bear, ailurus fulgens
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+
+CHECKING MATCHES:
+
+     MATCH:
+
+           Cheeseburger_01.jpg: 
+Real:               cheeseburger   Classifier:                   cheeseburger  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 Racoon_01.jpg: 
+Real:                     racoon   Classifier: lesser panda, red panda, panda, bear cat, cat bear, ailurus fulgens  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+     RESULTS     
+
+CNN Model -  RESNET
+
+Number of Images -  4
+
+Number of Images of Dogs -  2
+
+Number of Images not of Dogs -  2
+
+Key -  pct_match
+Value -  25.0
+
+Key -  pct_correct_dogs
+Value -  100.0
+
+Key -  pct_correct_breed
+Value -  0.0
+
+Key -  pct_correct_notdogs
+Value -  100.0
+
+Wrong Dog Breed Assignments - 
+Actual Breed -  dog
+Classified Breed -  golden retriever
+Actual Breed -  dog
+Classified Breed -  golden retriever
+
+** Total Elapsed Runtime: 0:0:1
